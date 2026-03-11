@@ -1,8 +1,6 @@
 const events = [
-  { event: "International Journalism Festival", location: "Perugia, Italy", topic: "Investigating Crypto Fraud" },
-  { event: "Canadian Business Conference", location: "Toronto, ON", topic: "The Future of Long-form Journalism" },
-  { event: "AI & Society Summit", location: "Montreal, QC", topic: "Covering AI for a General Audience" },
-  { event: "University of King's College", location: "Halifax, NS", topic: "Guest Lecture: Business Journalism" },
+  { event: "Elevate Conference", year: "2025", topic: "Lights, Camera, AI: Hollywood's Next Act" },
+  { event: "MaRS Mornings", year: "2025", topic: "Infrastructure Up: Canada's Sovereign Compute Conundrum" },
 ];
 
 const SpeakingSection = () => {
@@ -19,7 +17,7 @@ const SpeakingSection = () => {
                 <h3 className="text-base font-medium text-foreground mb-0.5">{item.event}</h3>
                 <p className="text-sm font-light italic text-muted-foreground">{item.topic}</p>
               </div>
-              <span className="text-xs font-light text-muted-foreground whitespace-nowrap">{item.location}</span>
+              <span className="text-xs font-light text-muted-foreground whitespace-nowrap">{item.year}</span>
             </div>
           ))}
         </div>
