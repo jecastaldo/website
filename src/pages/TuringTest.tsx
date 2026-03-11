@@ -15,6 +15,10 @@ const TuringTest = () => {
   const [revealed, setRevealed] = useState(false);
   const navigate = useNavigate();
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const humanLabel = humanIsA ? "A" : "B";
   const isCorrect = guess === humanLabel;
 
