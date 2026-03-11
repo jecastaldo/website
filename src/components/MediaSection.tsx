@@ -39,6 +39,13 @@ const podcasts = [
     url: "https://podcasts.apple.com/ca/podcast/ai-and-digital-sovereignty-in-the-elbows-up-era/id1565410296?i=1000732626163",
   },
   {
+    title: "Alberta's AI push could come with a big energy price tag",
+    show: "The Decibel",
+    date: "May 2025",
+    description: "Why Alberta is trying to become the next big data centre hub and what that means for the province's electricity needs and emissions.",
+    url: "https://podcasts.apple.com/ca/podcast/albertas-ai-push-could-come-with-a-big-energy-price-tag/id1565410296?i=1000709243388",
+  },
+  {
     title: "Canada's uncertain AI future",
     show: "The Decibel",
     date: "Apr 2024",
