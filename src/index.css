@@ -118,3 +118,218 @@
     }
   }
 }
+
+/* ===== GEOCITIES MODE ===== */
+
+@keyframes geocities-rainbow {
+  0%   { color: #ff0000; }
+  16%  { color: #ff8800; }
+  33%  { color: #ffff00; }
+  50%  { color: #00ff00; }
+  66%  { color: #0088ff; }
+  83%  { color: #8800ff; }
+  100% { color: #ff0000; }
+}
+
+@keyframes geocities-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+@keyframes geocities-stars {
+  0% { background-position: 0 0, 50px 50px; }
+  100% { background-position: 200px 200px, 250px 250px; }
+}
+
+.geocities {
+  --background: 240 100% 8%;
+  --foreground: 60 100% 50%;
+  --card: 240 60% 15%;
+  --card-foreground: 0 100% 100%;
+  --popover: 240 60% 15%;
+  --popover-foreground: 0 0% 100%;
+  --primary: 300 100% 50%;
+  --primary-foreground: 60 100% 50%;
+  --secondary: 180 100% 50%;
+  --secondary-foreground: 240 100% 8%;
+  --muted: 240 40% 20%;
+  --muted-foreground: 120 100% 60%;
+  --accent: 0 100% 50%;
+  --accent-foreground: 60 100% 100%;
+  --border: 300 100% 50%;
+  --input: 240 40% 25%;
+  --ring: 60 100% 50%;
+}
+
+.geocities body {
+  font-family: 'Comic Sans MS', 'Comic Sans', 'Chalkboard SE', cursive !important;
+  font-weight: 400 !important;
+  background:
+    radial-gradient(1px 1px at 20px 30px, hsl(60, 100%, 90%), transparent),
+    radial-gradient(1px 1px at 40px 70px, hsl(0, 0%, 80%), transparent),
+    radial-gradient(1px 1px at 90px 40px, hsl(200, 100%, 80%), transparent),
+    radial-gradient(1px 1px at 130px 80px, hsl(60, 100%, 90%), transparent),
+    radial-gradient(1px 1px at 160px 30px, hsl(0, 0%, 70%), transparent),
+    hsl(240, 100%, 8%) !important;
+  background-size: 200px 100px !important;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20'><text y='16' font-size='16'>✨</text></svg>"), auto;
+}
+
+.geocities h1,
+.geocities h2,
+.geocities h3,
+.geocities h4,
+.geocities h5,
+.geocities h6 {
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive !important;
+  text-shadow: 2px 2px 0px hsl(300, 100%, 30%), -1px -1px 0px hsl(180, 100%, 50%);
+}
+
+.geocities h1 {
+  animation: geocities-rainbow 3s linear infinite;
+  font-size: 2.5rem !important;
+}
+
+.geocities h2 {
+  color: hsl(60, 100%, 50%) !important;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: hsl(0, 100%, 50%);
+}
+
+.geocities img {
+  border: 3px solid hsl(300, 100%, 50%) !important;
+  border-radius: 0 !important;
+  box-shadow: 4px 4px 0 hsl(180, 100%, 50%);
+}
+
+.geocities a {
+  color: hsl(180, 100%, 60%) !important;
+  text-decoration: underline !important;
+}
+
+.geocities a:visited {
+  color: hsl(300, 100%, 70%) !important;
+}
+
+.geocities a:hover {
+  color: hsl(60, 100%, 50%) !important;
+  background: hsl(0, 100%, 50%) !important;
+}
+
+.geocities button {
+  font-family: 'Comic Sans MS', cursive !important;
+}
+
+.geocities section {
+  border-bottom: 3px dashed hsl(300, 100%, 50%);
+}
+
+.geocities nav {
+  background: hsl(240, 80%, 12%) !important;
+  border-bottom: 3px solid hsl(60, 100%, 50%) !important;
+  backdrop-filter: none !important;
+}
+
+.geocities footer {
+  border-top: 3px solid hsl(0, 100%, 50%);
+  background: hsl(240, 80%, 12%) !important;
+}
+
+/* Geocities-specific UI elements */
+.geocities-banner {
+  background: hsl(0, 100%, 50%);
+  color: hsl(60, 100%, 50%);
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 6px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+@keyframes geocities-scroll {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.geocities-marquee {
+  white-space: nowrap;
+  animation: geocities-scroll 15s linear infinite;
+}
+
+.geocities-construction {
+  background: hsl(60, 100%, 50%);
+  color: hsl(0, 0%, 0%);
+  font-family: 'Comic Sans MS', cursive;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  padding: 8px;
+  position: fixed;
+  top: 26px;
+  left: 0;
+  right: 0;
+  z-index: 9998;
+  animation: geocities-blink 1s step-end infinite;
+}
+
+.geocities-exit {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  background: hsl(0, 100%, 50%) !important;
+  color: hsl(60, 100%, 100%) !important;
+  font-family: 'Comic Sans MS', cursive !important;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px 16px;
+  border: 3px outset hsl(0, 0%, 70%);
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.geocities-exit:hover {
+  background: hsl(60, 100%, 50%) !important;
+  color: hsl(0, 0%, 0%) !important;
+}
+
+.geocities-guestbook {
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 14px;
+  padding: 16px;
+  color: hsl(120, 100%, 60%);
+}
+
+.geocities-guestbook a {
+  color: hsl(60, 100%, 50%) !important;
+  font-weight: bold;
+  animation: geocities-blink 1.5s step-end infinite;
+}
+
+/* Push content down when geocities banners are visible */
+.geocities body {
+  padding-top: 70px !important;
+}
+
+/* Make dividers more geocities */
+.geocities [class*="divide-"] > * + * {
+  border-color: hsl(300, 100%, 50%) !important;
+}
+
+/* Rounded corners? Not in 2000! */
+.geocities [class*="rounded"] {
+  border-radius: 0 !important;
+}
+
+/* Outset borders on cards */
+.geocities [class*="border"] {
+  border-style: outset !important;
+  border-color: hsl(180, 100%, 50%) !important;
+}
