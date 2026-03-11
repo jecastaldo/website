@@ -21,24 +21,22 @@ const HeroSection = () => {
         <p className="text-sm font-light text-muted-foreground max-w-xl mx-auto leading-relaxed mb-6">
           Award-winning writer crafting long-form, research-driven narratives on business, technology, and innovation.
         </p>
-        <div className="flex items-center justify-center gap-5">
+        <div className="flex items-center justify-center gap-4">
           <a
             href="https://x.com/joecastaldo"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-muted-foreground/50 hover:text-primary transition-all duration-300 hover:scale-110"
-            aria-label="Twitter / X"
+            className="w-9 h-9 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/40 transition-colors duration-200"
           >
-            <Twitter size={18} />
+            <Twitter size={15} />
           </a>
           <a
             href="https://linkedin.com/in/joecastaldo"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-muted-foreground/50 hover:text-primary transition-all duration-300 hover:scale-110"
-            aria-label="LinkedIn"
+            className="w-9 h-9 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/40 transition-colors duration-200"
           >
-            <Linkedin size={18} />
+            <Linkedin size={15} />
           </a>
         </div>
       </div>
