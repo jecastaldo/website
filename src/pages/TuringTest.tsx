@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
@@ -14,6 +14,10 @@ const TuringTest = () => {
   const [guess, setGuess] = useState<"A" | "B" | null>(null);
   const [revealed, setRevealed] = useState(false);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const humanLabel = humanIsA ? "A" : "B";
   const isCorrect = guess === humanLabel;
