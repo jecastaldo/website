@@ -12,16 +12,15 @@ const AboutSection = () => {
           <p>
             Deep expertise in artificial intelligence and Canadian business and economic trends. Recognized with multiple{" "}
             <span className="font-medium text-foreground">National Newspaper Awards</span> and{" "}
-            <span className="font-medium text-foreground">National Magazine Awards</span>. AI coverage nominated for a National Newspaper Award.
+            <span className="font-medium text-foreground">National Magazine Awards</span>.
           </p>
           <p>
             Featured in the Netflix documentary{" "}
-            <span className="font-medium text-foreground italic">Trust No One: The Hunt for the Crypto King</span>. Currently a business reporter at{" "}
-            <span className="font-medium text-foreground italic">The Globe and Mail</span>, producing long-form features, investigations, breaking news, and analysis.
+            <span className="font-medium text-foreground italic">Trust No One: The Hunt for the Crypto King</span>.
           </p>
         </div>
         <div className="mt-10 flex flex-wrap gap-2">
-          {["Long-form Feature Writing", "Interviewing", "Research & Data Synthesis", "AI & Technology Trends", "Editorial Strategy", "Writer Coaching"].map((tag) => (
+          {["Artificial Intelligence", "Business & Innovation", "Technology", "Policy", "Long-form Narrative"].map((tag) => (
             <span
               key={tag}
               className="px-3 py-1.5 rounded-full text-xs font-normal tracking-wide border border-primary/20 text-primary bg-primary/5"
