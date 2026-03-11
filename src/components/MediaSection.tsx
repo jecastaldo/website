@@ -25,6 +25,13 @@ const podcasts = [
     url: "https://podcasts.apple.com/ca/podcast/if-ai-is-a-bubble-how-will-it-pop/id1565410296?i=1000738500275",
   },
   {
+    title: "The first wave of AI layoffs",
+    show: "The Decibel",
+    date: "Sep 2025",
+    description: "What AI in the workplace means for the job market, mass layoffs, and the future of work in Canada.",
+    url: "https://podcasts.apple.com/ca/podcast/the-first-wave-of-ai-layoffs/id1565410296?i=1000724712687",
+  },
+  {
     title: "AI and digital sovereignty in the 'elbows up' era",
     show: "The Decibel",
     date: "Oct 2025",
