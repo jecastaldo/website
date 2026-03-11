@@ -1,9 +1,12 @@
 const awards = [
-  { name: "National Newspaper Award", category: "Business Reporting", year: "2023" },
-  { name: "National Newspaper Award", category: "Investigations", year: "2021" },
-  { name: "National Magazine Award", category: "Long-form Feature", year: "2020" },
-  { name: "National Magazine Award", category: "Business Writing", year: "2018" },
-  { name: "Digital Publishing Award", category: "Best Feature Article", year: "2019" },
+  { name: "SABEW Canada, Finalist", category: "Feature Writing (Longform) — EncroChat coverage", year: "2024" },
+  { name: "National Newspaper Awards, Finalist", category: "Business Reporting — AI coverage", year: "2023" },
+  { name: "National Media Awards Foundation, Gold", category: "Science and Technology Storytelling", year: "2023" },
+  { name: "SABEW Canada, Silver", category: "Profile Writing — Substack coverage", year: "2022" },
+  { name: "National Newspaper Awards, Winner", category: "Business (team) — Bridging Finance coverage", year: "2021" },
+  { name: "National Newspaper Awards, Finalist", category: "Feature Writing — MindGeek coverage", year: "2021" },
+  { name: "SABEW Canada, Silver", category: "Feature Writing (Short-form) — Toronto real estate coverage", year: "2018" },
+  { name: "National Magazine Awards, Winner", category: "Investigations — Target Canada coverage", year: "2017" },
 ];
 
 const AwardsSection = () => {
