@@ -25,7 +25,8 @@ const ContactSection = () => {
           Contact
         </h2>
         <p className="text-sm font-light text-muted-foreground mb-10">
-          For interviews, speaking engagements, or story tips.
+          For interviews, speaking engagements, or story tips — reach out at{" "}
+          <a href="mailto:joe.castaldo@gmail.com" className="text-primary hover:underline">joe.castaldo@gmail.com</a>.
         </p>
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
           <Input
