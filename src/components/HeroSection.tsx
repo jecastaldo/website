@@ -1,5 +1,5 @@
 import profilePhoto from "@/assets/profile-photo.png";
-import { Linkedin, Twitter, ChevronDown } from "lucide-react";
+import { Linkedin, Twitter, ChevronDown, Mail } from "lucide-react";
 import { motion } from "framer-motion";
 
 const HeroSection = () => {
@@ -19,7 +19,7 @@ const HeroSection = () => {
           Business Reporter · <span className="italic">The Globe and Mail</span>
         </p>
         <p className="text-sm font-light text-muted-foreground max-w-xl mx-auto leading-relaxed mb-6">
-          Award-winning writer crafting long-form, research-driven narratives on business, technology, and innovation.
+          Award-winning writer crafting long-form, research-driven narratives on business, technology, and innovation. Featured in the Netflix documentary <span className="italic font-medium text-foreground">Trust No One: The Hunt for the Crypto King</span>.
         </p>
         <div className="flex items-center justify-center gap-4">
           <a
@@ -37,6 +37,12 @@ const HeroSection = () => {
             className="w-9 h-9 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/40 transition-colors duration-200"
           >
             <Linkedin size={15} />
+          </a>
+          <a
+            href="mailto:joe.castaldo@gmail.com"
+            className="w-9 h-9 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/40 transition-colors duration-200"
+          >
+            <Mail size={15} />
           </a>
         </div>
       </div>

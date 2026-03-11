@@ -1,8 +1,6 @@
 const events = [
-  { event: "International Journalism Festival", location: "Perugia, Italy", topic: "Investigating Crypto Fraud" },
-  { event: "Canadian Business Conference", location: "Toronto, ON", topic: "The Future of Long-form Journalism" },
-  { event: "AI & Society Summit", location: "Montreal, QC", topic: "Covering AI for a General Audience" },
-  { event: "University of King's College", location: "Halifax, NS", topic: "Guest Lecture: Business Journalism" },
+  { event: "Elevate Conference", location: "2025", topic: "Lights, Camera, AI: Hollywood's Next Act" },
+  { event: "MaRS Mornings", location: "2025", topic: "Infrastructure Up: Canada's Sovereign Compute Conundrum" },
 ];
 
 const SpeakingSection = () => {
