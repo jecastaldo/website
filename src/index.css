@@ -249,6 +249,17 @@
   left: 0;
   right: 0;
   z-index: 9999;
+  overflow: hidden;
+}
+
+@keyframes geocities-scroll {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.geocities-marquee {
+  white-space: nowrap;
+  animation: geocities-scroll 15s linear infinite;
 }
 
 .geocities-construction {
