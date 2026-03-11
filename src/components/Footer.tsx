@@ -1,4 +1,4 @@
-import { Bot } from "lucide-react";
+import { Construction } from "lucide-react";
 import { useGeocities } from "@/contexts/GeocitiesContext";
 
 const Footer = () => {
