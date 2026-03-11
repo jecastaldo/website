@@ -9,11 +9,11 @@ const GeocitiesBanner = () => {
     <>
       {/* Top marquee banner */}
       <div className="geocities-banner">
-        <marquee scrollamount={3}>
+        <div className="geocities-marquee">
           ★·.·´¯`·.·★ Welcome to Joe's AWESOME Home Page!!! ★·.·´¯`·.·★ You are visitor #
           {Math.floor(Math.random() * 99999).toString().padStart(5, "0")} ★·.·´¯`·.·★ Best
           viewed in Netscape Navigator 4.0 at 800x600 ★·.·´¯`·.·★
-        </marquee>
+        </div>
       </div>
 
       {/* Under construction bar */}

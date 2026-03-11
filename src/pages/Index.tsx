@@ -8,10 +8,12 @@ import AwardsSection from "@/components/AwardsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import ScrollFadeIn from "@/components/ScrollFadeIn";
+import GeocitiesBanner from "@/components/GeocitiesBanner";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <GeocitiesBanner />
       <Navbar />
       <ScrollFadeIn>
         <HeroSection />
