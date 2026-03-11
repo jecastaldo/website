@@ -23,7 +23,7 @@ const HeroSection = () => {
         </p>
         <div className="flex items-center justify-center gap-4">
           <a
-            href="https://x.com/joecastaldo"
+            href="https://x.com/Joe_Castaldo"
             target="_blank"
             rel="noopener noreferrer"
             className="w-9 h-9 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/40 transition-colors duration-200"
