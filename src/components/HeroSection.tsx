@@ -7,7 +7,7 @@ const HeroSection = () => {
         <img
           src={profilePhoto}
           alt="Joe Castaldo"
-          className="w-18 h-18 md:w-22 md:h-22 rounded-full object-cover mx-auto mb-8 shadow-lg"
+          className="w-36 h-36 md:w-44 md:h-44 rounded-full object-cover mx-auto mb-8 shadow-lg"
         />
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-foreground mb-6">
           JOE CASTALDO
