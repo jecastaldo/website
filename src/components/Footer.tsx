@@ -15,7 +15,7 @@ const Footer = () => {
           className="text-muted-foreground/20 hover:text-primary transition-colors duration-300"
           aria-label="Easter egg"
         >
-          <Bot size={14} />
+          <Construction size={14} />
         </button>
       </div>
     </footer>
