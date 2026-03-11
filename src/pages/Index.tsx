@@ -7,18 +7,33 @@ import SpeakingSection from "@/components/SpeakingSection";
 import AwardsSection from "@/components/AwardsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import ScrollFadeIn from "@/components/ScrollFadeIn";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      <HeroSection />
-      <AboutSection />
-      <WritingSection />
-      <MediaSection />
-      <SpeakingSection />
-      <AwardsSection />
-      <ContactSection />
+      <ScrollFadeIn>
+        <HeroSection />
+      </ScrollFadeIn>
+      <ScrollFadeIn>
+        <AboutSection />
+      </ScrollFadeIn>
+      <ScrollFadeIn>
+        <WritingSection />
+      </ScrollFadeIn>
+      <ScrollFadeIn>
+        <MediaSection />
+      </ScrollFadeIn>
+      <ScrollFadeIn>
+        <SpeakingSection />
+      </ScrollFadeIn>
+      <ScrollFadeIn>
+        <AwardsSection />
+      </ScrollFadeIn>
+      <ScrollFadeIn>
+        <ContactSection />
+      </ScrollFadeIn>
       <Footer />
     </div>
   );
