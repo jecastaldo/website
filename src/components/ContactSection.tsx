@@ -19,32 +19,32 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-24 px-6">
-      <div className="max-w-2xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-medium text-foreground mb-4 tracking-tight">
-          Get in Touch
+    <section id="contact" className="py-24 px-6 bg-card">
+      <div className="max-w-xl mx-auto">
+        <h2 className="text-xs tracking-[0.25em] uppercase font-medium text-primary mb-3">
+          Contact
         </h2>
-        <p className="text-base font-light text-muted-foreground mb-10">
+        <p className="text-sm font-light text-muted-foreground mb-10">
           For interviews, speaking engagements, or story tips.
         </p>
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+        <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
           <Input
-            placeholder="Your name"
+            placeholder="Name"
             {...register("name", { required: true })}
-            className="rounded-xl h-12 font-light"
+            className="rounded-lg h-11 font-light text-sm bg-background border-border focus:border-primary"
           />
           <Input
             type="email"
-            placeholder="Your email"
+            placeholder="Email"
             {...register("email", { required: true })}
-            className="rounded-xl h-12 font-light"
+            className="rounded-lg h-11 font-light text-sm bg-background border-border focus:border-primary"
           />
           <Textarea
-            placeholder="Your message"
+            placeholder="Message"
             {...register("message", { required: true })}
-            className="rounded-xl min-h-[140px] font-light"
+            className="rounded-lg min-h-[120px] font-light text-sm bg-background border-border focus:border-primary resize-none"
           />
-          <Button type="submit" size="lg" className="rounded-xl w-full md:w-auto font-medium">
+          <Button type="submit" className="rounded-lg font-medium text-sm px-8 h-11">
             Send Message
           </Button>
         </form>

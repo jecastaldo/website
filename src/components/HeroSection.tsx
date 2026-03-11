@@ -2,21 +2,22 @@ import profilePhoto from "@/assets/profile-photo.png";
 
 const HeroSection = () => {
   return (
-    <section id="hero" className="pt-32 pb-24 px-6">
-      <div className="max-w-4xl mx-auto text-center">
+    <section id="hero" className="pt-40 pb-28 px-6">
+      <div className="max-w-3xl mx-auto text-center">
         <img
           src={profilePhoto}
           alt="Joe Castaldo"
-          className="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover mx-auto mb-8 shadow-lg"
+          className="w-28 h-28 rounded-full object-cover mx-auto mb-10 shadow-md ring-4 ring-background"
         />
-        <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-foreground mb-6">
-          JOE CASTALDO
+        <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground mb-4 leading-[1.1]">
+          Joe Castaldo
         </h1>
-        <p className="text-lg md:text-xl font-medium text-muted-foreground mb-4">
-          Business Reporter · The Globe and Mail
+        <div className="w-10 h-[3px] bg-primary mx-auto mb-6 rounded-full" />
+        <p className="text-base md:text-lg font-normal text-muted-foreground mb-3 tracking-wide">
+          Business Reporter · <span className="italic">The Globe and Mail</span>
         </p>
-        <p className="text-base font-light text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-          Award-winning writer and editor crafting long-form, research-driven narratives on business, technology, policy, and innovation.
+        <p className="text-sm font-light text-muted-foreground max-w-xl mx-auto leading-relaxed">
+          Award-winning writer crafting long-form, research-driven narratives on business, technology, and innovation.
         </p>
       </div>
     </section>

@@ -1,3 +1,5 @@
+import { ArrowUpRight } from "lucide-react";
+
 const articles = [
   { title: "The Race to Build AI That Can Think", publication: "The Globe and Mail", date: "2024", category: "Technology" },
   { title: "Inside Canada's Productivity Crisis", publication: "The Globe and Mail", date: "2024", category: "Economy" },
@@ -9,26 +11,29 @@ const articles = [
 
 const WritingSection = () => {
   return (
-    <section id="writing" className="py-24 px-6">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-medium text-foreground mb-12 tracking-tight">
+    <section id="writing" className="py-24 px-6 bg-card">
+      <div className="max-w-3xl mx-auto">
+        <h2 className="text-xs tracking-[0.25em] uppercase font-medium text-primary mb-12">
           Selected Writing
         </h2>
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="divide-y divide-border">
           {articles.map((article, i) => (
             <div
               key={i}
-              className="group p-6 rounded-2xl bg-card border border-border hover:shadow-lg transition-shadow cursor-pointer"
+              className="group py-6 first:pt-0 last:pb-0 flex items-start justify-between gap-4 cursor-pointer"
             >
-              <span className="text-xs font-medium text-primary uppercase tracking-wider">
-                {article.category}
-              </span>
-              <h3 className="text-lg font-medium text-foreground mt-2 mb-3 group-hover:text-primary transition-colors">
-                {article.title}
-              </h3>
-              <p className="text-sm font-light text-muted-foreground">
-                {article.publication} · {article.date}
-              </p>
+              <div>
+                <h3 className="text-base font-medium text-foreground group-hover:text-primary transition-colors duration-200 mb-1">
+                  {article.title}
+                </h3>
+                <p className="text-sm font-light text-muted-foreground">
+                  {article.publication} · {article.date}
+                </p>
+              </div>
+              <ArrowUpRight
+                size={16}
+                className="text-muted-foreground/40 group-hover:text-primary transition-all duration-200 mt-1 shrink-0 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+              />
             </div>
           ))}
         </div>

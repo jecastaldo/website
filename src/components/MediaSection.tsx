@@ -1,4 +1,4 @@
-import { Play } from "lucide-react";
+import { Play, Film } from "lucide-react";
 
 const appearances = [
   {
@@ -26,36 +26,54 @@ const appearances = [
 
 const MediaSection = () => {
   return (
-    <section id="media" className="py-24 px-6 bg-card">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-medium text-foreground mb-12 tracking-tight">
+    <section id="media" className="py-24 px-6">
+      <div className="max-w-3xl mx-auto">
+        <h2 className="text-xs tracking-[0.25em] uppercase font-medium text-primary mb-12">
           Podcasts & Media
         </h2>
-        <div className="space-y-6">
-          {appearances.map((item, i) => (
-            <div
-              key={i}
-              className={`p-6 rounded-2xl border transition-shadow ${
-                item.highlight
-                  ? "border-primary/30 bg-primary/5 shadow-md"
-                  : "border-border bg-background hover:shadow-md"
-              }`}
-            >
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-1">
-                  <Play size={16} className="text-primary ml-0.5" />
-                </div>
-                <div>
-                  <span className="text-xs font-medium text-primary uppercase tracking-wider">
-                    {item.type}
-                  </span>
-                  <h3 className="text-lg font-medium text-foreground mt-1 mb-2">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm font-light text-muted-foreground leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
+
+        {/* Featured item */}
+        {appearances.filter(a => a.highlight).map((item, i) => (
+          <div
+            key={i}
+            className="mb-8 p-8 rounded-2xl border border-primary/15 bg-primary/[0.03] relative overflow-hidden"
+          >
+            <div className="flex items-start gap-5">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
+                <Film size={20} className="text-primary" />
+              </div>
+              <div>
+                <span className="text-[10px] font-medium text-primary uppercase tracking-[0.2em]">
+                  {item.type}
+                </span>
+                <h3 className="text-lg font-medium text-foreground mt-1 mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-sm font-light text-muted-foreground leading-relaxed">
+                  {item.description}
+                </p>
+              </div>
+            </div>
+          </div>
+        ))}
+
+        {/* Other items */}
+        <div className="divide-y divide-border">
+          {appearances.filter(a => !a.highlight).map((item, i) => (
+            <div key={i} className="py-5 first:pt-0 flex items-start gap-4">
+              <div className="w-8 h-8 rounded-lg bg-muted flex items-center justify-center shrink-0 mt-0.5">
+                <Play size={12} className="text-muted-foreground ml-0.5" />
+              </div>
+              <div>
+                <span className="text-[10px] font-medium text-muted-foreground uppercase tracking-[0.15em]">
+                  {item.type}
+                </span>
+                <h3 className="text-sm font-medium text-foreground mt-0.5">
+                  {item.title}
+                </h3>
+                <p className="text-xs font-light text-muted-foreground leading-relaxed mt-1">
+                  {item.description}
+                </p>
               </div>
             </div>
           ))}

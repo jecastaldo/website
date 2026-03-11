@@ -1,5 +1,3 @@
-import { Award } from "lucide-react";
-
 const awards = [
   { name: "National Newspaper Award", category: "Business Reporting", year: "2023" },
   { name: "National Newspaper Award", category: "Investigations", year: "2021" },
@@ -10,25 +8,19 @@ const awards = [
 
 const AwardsSection = () => {
   return (
-    <section id="awards" className="py-24 px-6 bg-card">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-medium text-foreground mb-12 tracking-tight">
+    <section id="awards" className="py-24 px-6">
+      <div className="max-w-3xl mx-auto">
+        <h2 className="text-xs tracking-[0.25em] uppercase font-medium text-primary mb-12">
           Awards & Recognition
         </h2>
-        <div className="space-y-4">
+        <div className="divide-y divide-border">
           {awards.map((award, i) => (
-            <div
-              key={i}
-              className="flex items-center gap-4 p-5 rounded-2xl bg-background border border-border"
-            >
-              <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                <Award size={16} className="text-primary" />
+            <div key={i} className="py-4 first:pt-0 last:pb-0 flex items-center justify-between gap-4">
+              <div>
+                <h3 className="text-sm font-medium text-foreground">{award.name}</h3>
+                <p className="text-xs font-light text-muted-foreground mt-0.5">{award.category}</p>
               </div>
-              <div className="flex-1">
-                <h3 className="text-base font-medium text-foreground">{award.name}</h3>
-                <p className="text-sm font-light text-muted-foreground">{award.category}</p>
-              </div>
-              <span className="text-sm font-light text-muted-foreground">{award.year}</span>
+              <span className="text-xs font-light text-muted-foreground tabular-nums">{award.year}</span>
             </div>
           ))}
         </div>
