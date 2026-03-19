@@ -6,6 +6,7 @@ const navItems = [
   { label: "Media", id: "media" },
   { label: "Speaking", id: "speaking" },
   { label: "Awards", id: "awards" },
+  { label: "Contact", id: "contact", secondary: true },
 ];
 
 const HeroSection = () => {
