@@ -1,17 +1,41 @@
+import { useState, useEffect } from "react";
 import { useMobileMenu } from "@/contexts/MobileMenuContext";
 
 const navItems = [
-  { label: "Writing", id: "#writing" },
-  { label: "Media", id: "#media" },
-  { label: "Speaking", id: "#speaking" },
-  { label: "Awards", id: "#awards" },
+  { label: "Writing", id: "writing" },
+  { label: "Media", id: "media" },
+  { label: "Speaking", id: "speaking" },
+  { label: "Awards", id: "awards" },
 ];
 
 const HeroSection = () => {
   const { menuOpen, setMenuOpen } = useMobileMenu();
+  const [activeSection, setActiveSection] = useState<string | null>(null);
+
+  useEffect(() => {
+    const observers: IntersectionObserver[] = [];
+    const sectionIds = navItems.map((item) => item.id);
+
+    sectionIds.forEach((id) => {
+      const el = document.getElementById(id);
+      if (!el) return;
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setActiveSection(id);
+          }
+        },
+        { rootMargin: "-30% 0px -50% 0px" }
+      );
+      observer.observe(el);
+      observers.push(observer);
+    });
+
+    return () => observers.forEach((o) => o.disconnect());
+  }, []);
 
   const scrollTo = (id: string) => {
-    document.querySelector(id)?.scrollIntoView({ behavior: "smooth" });
+    document.querySelector(`#${id}`)?.scrollIntoView({ behavior: "smooth" });
     setMenuOpen(false);
   };
 
@@ -19,7 +43,7 @@ const HeroSection = () => {
     <header className="w-full p-6 md:p-8 pl-8 md:pl-10">
       <div>
         <button
-          onClick={() => scrollTo("#about")}
+          onClick={() => scrollTo("about")}
           className="font-display italic text-5xl md:text-[5.5rem] leading-none text-foreground hover:opacity-80 transition-opacity font-bold"
           style={{ letterSpacing: '-0.02em' }}
         >
@@ -47,19 +71,31 @@ const HeroSection = () => {
           </button>
         ))}
         <div className="mt-4 flex flex-col items-end gap-8 text-muted-foreground">
-          <button onClick={() => scrollTo("#contact")} className="hover:text-foreground hover:underline underline-offset-8 decoration-2 decoration-[hsl(210,100%,56%)] transition-all">Contact</button>
+          <button onClick={() => scrollTo("contact")} className="hover:text-foreground hover:underline underline-offset-8 decoration-2 decoration-[hsl(210,100%,56%)] transition-all">Contact</button>
           <a href="https://www.linkedin.com/in/joecastaldo/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground hover:underline underline-offset-8 decoration-2 decoration-[hsl(210,100%,56%)] transition-all">LinkedIn</a>
         </div>
       </div>
 
       <nav className="fixed top-6 right-6 md:top-8 md:right-8 z-50 hidden md:flex flex-col items-end gap-4 text-[18px] text-foreground font-medium">
-        {navItems.map((item) => (
-          <button key={item.label} onClick={() => scrollTo(item.id)} className="hover:underline underline-offset-8 decoration-2 decoration-[hsl(210,100%,56%)] transition-all">
-            {item.label}
-          </button>
-        ))}
+        {navItems.map((item) => {
+          const isActive = activeSection === item.id;
+          return (
+            <button
+              key={item.label}
+              onClick={() => scrollTo(item.id)}
+              className="hover:underline underline-offset-8 decoration-2 decoration-[hsl(210,100%,56%)] transition-all duration-300 origin-right"
+              style={{
+                fontWeight: isActive ? 700 : 500,
+                transform: isActive ? "scale(1.12)" : "scale(1)",
+                transformOrigin: "right center",
+              }}
+            >
+              {item.label}
+            </button>
+          );
+        })}
         <div className="mt-3 flex flex-col items-end gap-4 text-muted-foreground">
-          <button onClick={() => scrollTo("#contact")} className="hover:text-foreground hover:underline underline-offset-8 decoration-2 decoration-[hsl(210,100%,56%)] transition-all">Contact</button>
+          <button onClick={() => scrollTo("contact")} className="hover:text-foreground hover:underline underline-offset-8 decoration-2 decoration-[hsl(210,100%,56%)] transition-all">Contact</button>
           <a href="https://www.linkedin.com/in/joecastaldo/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground hover:underline underline-offset-8 decoration-2 decoration-[hsl(210,100%,56%)] transition-all">LinkedIn</a>
         </div>
       </nav>
