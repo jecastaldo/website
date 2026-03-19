@@ -11,24 +11,18 @@ const awards = [
 
 const AwardsSection = () => {
   return (
-    <section id="awards" className="py-24 px-6">
-      <div className="max-w-3xl mx-auto">
-        <h2 className="text-xs tracking-[0.25em] uppercase font-medium text-primary mb-12">
-          Awards & Recognition
-        </h2>
-        <div className="divide-y divide-border">
-          {awards.map((award, i) => (
-            <div key={i} className="py-4 first:pt-0 last:pb-0 flex items-center justify-between gap-4">
-              <div>
-                <h3 className="text-sm font-medium text-foreground">{award.name}</h3>
-                <p className="text-xs font-light text-muted-foreground mt-0.5">{award.category}</p>
-              </div>
-              <span className="text-xs font-light text-muted-foreground tabular-nums">{award.year}</span>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
+    <div id="awards" className="flex flex-col gap-24">
+      <h2 className="text-[12px] text-muted-foreground uppercase tracking-widest">Awards & Recognition</h2>
+      {awards.map((award, i) => (
+        <article key={i} className="flex flex-col gap-3">
+          <span className="text-[12px] text-muted-foreground/60 uppercase tracking-widest">{award.year}</span>
+          <p className="text-[15px] text-muted-foreground leading-relaxed max-w-[650px]">
+            <span className="font-semibold text-foreground">{award.name}</span>
+            {" "}— {award.category}
+          </p>
+        </article>
+      ))}
+    </div>
   );
 };
 
