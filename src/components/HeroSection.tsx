@@ -4,7 +4,7 @@ const HeroSection = () => {
   return (
     <header className="w-full p-6 md:p-8 flex justify-between items-start">
       {/* Name */}
-      <div className="pointer-events-auto">
+      <div>
         <button
           onClick={() => document.querySelector("#about")?.scrollIntoView({ behavior: "smooth" })}
           className="font-display italic text-5xl md:text-[5.5rem] leading-none tracking-tight text-foreground hover:opacity-80 transition-opacity"
