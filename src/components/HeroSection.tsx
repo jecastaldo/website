@@ -19,7 +19,6 @@ const HeroSection = () => {
           { label: "Media", id: "#media" },
           { label: "Speaking", id: "#speaking" },
           { label: "Awards", id: "#awards" },
-          { label: "Contact", id: "#contact" },
         ].map((item) => (
           <button
             key={item.label}
@@ -30,6 +29,12 @@ const HeroSection = () => {
           </button>
         ))}
         <div className="mt-3 flex flex-col items-end gap-4 text-muted-foreground">
+          <button
+            onClick={() => document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" })}
+            className="hover:text-foreground hover:underline underline-offset-8 decoration-2 decoration-[hsl(210,100%,56%)] transition-all"
+          >
+            Contact
+          </button>
           <a
             href="https://linkedin.com/in/joecastaldo"
             target="_blank"
