@@ -15,37 +15,39 @@ const HeroSection = () => {
       </div>
 
       {/* Nav links */}
-      <nav className="flex flex-col items-end gap-1 text-[13px] text-muted-foreground">
-        <div className="flex gap-4 mb-3 text-foreground">
+      <nav className="flex flex-col items-end gap-2 text-[16px] text-foreground font-medium">
+        {[
+          { label: "Writing", id: "#writing" },
+          { label: "Media", id: "#media" },
+          { label: "Speaking", id: "#speaking" },
+          { label: "Awards", id: "#awards" },
+        ].map((item) => (
           <button
-            onClick={() => document.querySelector("#writing")?.scrollIntoView({ behavior: "smooth" })}
-            className="hover:underline underline-offset-4"
+            key={item.label}
+            onClick={() => document.querySelector(item.id)?.scrollIntoView({ behavior: "smooth" })}
+            className="hover:underline underline-offset-4 decoration-2 decoration-[hsl(210,100%,56%)] transition-all"
           >
-            Writing
+            {item.label}
           </button>
-          <button
-            onClick={() => document.querySelector("#media")?.scrollIntoView({ behavior: "smooth" })}
-            className="hover:underline underline-offset-4"
+        ))}
+        <div className="mt-2 flex flex-col items-end gap-2 text-muted-foreground">
+          <a
+            href="https://x.com/Joe_Castaldo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-foreground hover:underline underline-offset-4 decoration-2 decoration-[hsl(210,100%,56%)] transition-all"
           >
-            Media
-          </button>
+            Twitter
+          </a>
+          <a
+            href="https://linkedin.com/in/joecastaldo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-foreground hover:underline underline-offset-4 decoration-2 decoration-[hsl(210,100%,56%)] transition-all"
+          >
+            LinkedIn
+          </a>
         </div>
-        <a
-          href="https://x.com/Joe_Castaldo"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-foreground transition-colors"
-        >
-          Twitter
-        </a>
-        <a
-          href="https://linkedin.com/in/joecastaldo"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-foreground transition-colors"
-        >
-          LinkedIn
-        </a>
       </nav>
     </header>
   );
