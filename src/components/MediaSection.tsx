@@ -61,7 +61,8 @@ const MediaSection = () => {
       {/* Featured documentary */}
       {appearances.map((item, i) => (
         <article key={i} className="flex flex-col gap-1">
-          <span className="text-[12px] text-muted-foreground/60 uppercase tracking-widest">
+          <span className="text-[12px] text-muted-foreground/60 uppercase tracking-widest flex items-center gap-1.5">
+            <Film size={12} />
             {item.type}
           </span>
           <p className="text-[19px] text-muted-foreground leading-relaxed max-w-[650px]">
