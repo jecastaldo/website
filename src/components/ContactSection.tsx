@@ -1,8 +1,8 @@
 const ContactSection = () => {
   return (
     <div id="contact" className="flex flex-col gap-3 mt-10">
-      <h2 className="text-[12px] text-muted-foreground uppercase tracking-widest">Contact</h2>
-      <p className="text-[15px] text-muted-foreground leading-relaxed max-w-[650px]">
+      <h2 className="text-[22px] text-foreground font-semibold tracking-tight">Contact</h2>
+      <p className="text-[19px] text-muted-foreground leading-relaxed max-w-[650px]">
         For interviews, speaking engagements, or story tips — reach out on{" "}
         <a
           href="https://x.com/Joe_Castaldo"
