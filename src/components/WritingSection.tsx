@@ -9,14 +9,14 @@ const articles = [
 
 const WritingSection = () => {
   return (
-    <div id="writing" className="flex flex-col gap-24">
-      <h2 className="text-[12px] text-muted-foreground uppercase tracking-widest">Selected Writing</h2>
+    <div id="writing" className="flex flex-col gap-10">
+      <h2 className="text-[22px] text-foreground font-semibold tracking-tight">Selected Writing</h2>
       {articles.map((article, i) => (
         <article key={i} className="flex flex-col gap-3">
           <span className="text-[12px] text-muted-foreground/60 uppercase tracking-widest">
             {article.category} · {article.date}
           </span>
-          <p className="text-[15px] text-muted-foreground leading-relaxed max-w-[650px]">
+          <p className="text-[19px] text-muted-foreground leading-relaxed max-w-[650px]">
             <span className="font-semibold text-foreground underline decoration-muted-foreground/40 hover:decoration-foreground transition-colors underline-offset-2 cursor-pointer">
               {article.title}
             </span>

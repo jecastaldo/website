@@ -53,8 +53,8 @@ const podcasts = [
 
 const MediaSection = () => {
   return (
-    <div id="media" className="flex flex-col gap-24">
-      <h2 className="text-[12px] text-muted-foreground uppercase tracking-widest">Podcasts & Media</h2>
+    <div id="media" className="flex flex-col gap-10">
+      <h2 className="text-[22px] text-foreground font-semibold tracking-tight">Podcasts & Media</h2>
 
       {/* Featured documentary */}
       {appearances.map((item, i) => (
@@ -62,7 +62,7 @@ const MediaSection = () => {
           <span className="text-[12px] text-muted-foreground/60 uppercase tracking-widest">
             {item.type}
           </span>
-          <p className="text-[15px] text-muted-foreground leading-relaxed max-w-[650px]">
+          <p className="text-[19px] text-muted-foreground leading-relaxed max-w-[650px]">
             <span className="font-semibold text-foreground">{item.title}</span>
             {" "}— {item.description}
           </p>
@@ -75,7 +75,7 @@ const MediaSection = () => {
           <span className="text-[12px] text-muted-foreground/60 uppercase tracking-widest">
             {item.date}
           </span>
-          <p className="text-[15px] text-muted-foreground leading-relaxed max-w-[650px]">
+          <p className="text-[19px] text-muted-foreground leading-relaxed max-w-[650px]">
             <a
               href={item.url}
               target="_blank"
