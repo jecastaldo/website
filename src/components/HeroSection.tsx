@@ -19,6 +19,7 @@ const HeroSection = () => {
           { label: "Media", id: "#media" },
           { label: "Speaking", id: "#speaking" },
           { label: "Awards", id: "#awards" },
+          { label: "Contact", id: "#contact" },
         ].map((item) => (
           <button
             key={item.label}
@@ -29,14 +30,6 @@ const HeroSection = () => {
           </button>
         ))}
         <div className="mt-3 flex flex-col items-end gap-4 text-muted-foreground">
-          <a
-            href="https://x.com/Joe_Castaldo"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-foreground hover:underline underline-offset-8 decoration-2 decoration-[hsl(210,100%,56%)] transition-all"
-          >
-            Twitter
-          </a>
           <a
             href="https://linkedin.com/in/joecastaldo"
             target="_blank"
