@@ -36,7 +36,7 @@ const HeroSection = () => {
             Contact
           </button>
           <a
-            href="https://linkedin.com/in/joecastaldo"
+            href="https://www.linkedin.com/in/joecastaldo/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-foreground hover:underline underline-offset-8 decoration-2 decoration-[hsl(210,100%,56%)] transition-all"
