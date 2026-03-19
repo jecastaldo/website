@@ -58,7 +58,7 @@ const MediaSection = () => {
 
       {/* Featured documentary */}
       {appearances.map((item, i) => (
-        <article key={i} className="flex flex-col gap-3">
+        <article key={i} className="flex flex-col gap-1">
           <span className="text-[12px] text-muted-foreground/60 uppercase tracking-widest">
             {item.type}
           </span>
