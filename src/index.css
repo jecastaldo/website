@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'Swear Text';
-  src: url('/fonts/Swear_Text-Black_Cilati.woff2') format('woff2'),
-       url('/fonts/Swear_Text-Black_Cilati.woff') format('woff');
-  font-weight: 900;
+  src: url('/fonts/Swear_Text-Bold_Cilati.woff2') format('woff2'),
+       url('/fonts/Swear_Text-Bold_Cilati.woff') format('woff');
+  font-weight: 700;
   font-style: italic;
   font-display: swap;
 }
