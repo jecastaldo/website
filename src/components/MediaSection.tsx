@@ -66,7 +66,7 @@ const MediaSection = () => {
             {item.type}
           </span>
           <p className="text-[19px] text-muted-foreground leading-relaxed max-w-[650px]">
-            <span className="font-semibold text-foreground">{item.title}</span>
+            <a href="https://youtu.be/vW2BPQ15OSw?si=CLcGBhT7L-uxtIwv" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground underline decoration-muted-foreground/40 hover:decoration-foreground transition-colors underline-offset-2">{item.title}</a>
             {" "}— {item.description}
           </p>
         </article>
