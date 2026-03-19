@@ -1,8 +1,6 @@
-import { Linkedin, Twitter } from "lucide-react";
-
 const HeroSection = () => {
   return (
-    <header className="w-full p-6 md:p-8 flex justify-between items-start">
+    <header className="w-full p-6 md:p-8 pl-8 md:pl-10">
       {/* Name */}
       <div>
         <button
@@ -15,7 +13,7 @@ const HeroSection = () => {
       </div>
 
       {/* Nav links */}
-      <nav className="fixed top-6 right-6 md:top-8 md:right-8 z-50 flex flex-col items-end gap-2 text-[16px] text-foreground font-medium">
+      <nav className="fixed top-6 right-6 md:top-8 md:right-8 z-50 flex flex-col items-end gap-4 text-[18px] text-foreground font-medium">
         {[
           { label: "Writing", id: "#writing" },
           { label: "Media", id: "#media" },
@@ -25,17 +23,17 @@ const HeroSection = () => {
           <button
             key={item.label}
             onClick={() => document.querySelector(item.id)?.scrollIntoView({ behavior: "smooth" })}
-            className="hover:underline underline-offset-4 decoration-2 decoration-[hsl(210,100%,56%)] transition-all"
+            className="hover:underline underline-offset-8 decoration-2 decoration-[hsl(210,100%,56%)] transition-all"
           >
             {item.label}
           </button>
         ))}
-        <div className="mt-2 flex flex-col items-end gap-2 text-muted-foreground">
+        <div className="mt-3 flex flex-col items-end gap-4 text-muted-foreground">
           <a
             href="https://x.com/Joe_Castaldo"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-foreground hover:underline underline-offset-4 decoration-2 decoration-[hsl(210,100%,56%)] transition-all"
+            className="hover:text-foreground hover:underline underline-offset-8 decoration-2 decoration-[hsl(210,100%,56%)] transition-all"
           >
             Twitter
           </a>
@@ -43,7 +41,7 @@ const HeroSection = () => {
             href="https://linkedin.com/in/joecastaldo"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-foreground hover:underline underline-offset-4 decoration-2 decoration-[hsl(210,100%,56%)] transition-all"
+            className="hover:text-foreground hover:underline underline-offset-8 decoration-2 decoration-[hsl(210,100%,56%)] transition-all"
           >
             LinkedIn
           </a>
