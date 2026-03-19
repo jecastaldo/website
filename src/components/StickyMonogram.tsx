@@ -14,10 +14,10 @@ const StickyMonogram = () => {
   return (
     <button
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      className="fixed top-6 left-6 md:top-8 md:left-8 z-50 w-10 h-10 rounded-full bg-background border-2 border-foreground flex items-center justify-center hover:opacity-80 transition-opacity"
+      className="fixed top-6 left-6 md:top-8 md:left-8 z-50 w-10 h-10 rounded-full bg-background border border-foreground flex items-center justify-center hover:opacity-80 transition-opacity"
       aria-label="Back to top"
     >
-      <span className="font-display italic text-foreground text-sm font-bold leading-none" style={{ letterSpacing: '-0.02em' }}>
+      <span className="font-display italic text-foreground text-base font-black leading-none" style={{ letterSpacing: '-0.02em' }}>
         JC
       </span>
     </button>
