@@ -7,7 +7,7 @@ const HeroSection = () => {
       <div>
         <button
           onClick={() => document.querySelector("#about")?.scrollIntoView({ behavior: "smooth" })}
-          className="font-display italic text-5xl md:text-[5.5rem] leading-none tracking-tight text-foreground hover:opacity-80 transition-opacity"
+          className="font-display italic text-5xl md:text-[5.5rem] leading-none tracking-tight text-foreground hover:opacity-80 transition-opacity font-black"
         >
           Joe Castaldo
         </button>

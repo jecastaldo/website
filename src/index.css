@@ -7,6 +7,15 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Swear Text';
+  src: url('/fonts/Swear_Text-Black_Cilati.woff2') format('woff2'),
+       url('/fonts/Swear_Text-Black_Cilati.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
