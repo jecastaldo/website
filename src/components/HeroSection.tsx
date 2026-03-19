@@ -19,6 +19,7 @@ const HeroSection = () => {
           { label: "Media", id: "#media" },
           { label: "Speaking", id: "#speaking" },
           { label: "Awards", id: "#awards" },
+          { label: "Contact", id: "#contact" },
         ].map((item) => (
           <button
             key={item.label}
