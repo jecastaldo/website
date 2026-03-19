@@ -15,10 +15,10 @@ const ScrollToTop = () => {
   return (
     <button
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      className="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-foreground text-background flex items-center justify-center shadow-lg transition-transform duration-200 hover:scale-110 active:scale-100"
+      className="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-foreground text-background flex items-center justify-center shadow-lg transition-transform duration-200 hover:scale-105 active:scale-100"
       aria-label="Scroll to top"
     >
-      <ChevronUp className="w-5 h-5" />
+      <ChevronUp className="w-7 h-7" />
     </button>
   );
 };
