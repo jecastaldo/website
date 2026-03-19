@@ -1,3 +1,5 @@
+import { Film, Mic } from "lucide-react";
+
 const appearances = [
   {
     title: "Trust No One: The Hunt for the Crypto King",
