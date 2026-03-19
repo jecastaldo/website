@@ -2,7 +2,7 @@ import { Linkedin, Twitter } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <header className="fixed top-0 left-0 w-full z-50 p-6 md:p-8 flex justify-between items-start pointer-events-none mix-blend-difference">
+    <header className="w-full p-6 md:p-8 flex justify-between items-start">
       {/* Name */}
       <div className="pointer-events-auto">
         <button
