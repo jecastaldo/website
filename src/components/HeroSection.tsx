@@ -51,7 +51,7 @@ const HeroSection = () => {
   };
 
   return (
-    <header className="w-full p-6 md:p-8 pl-8 md:pl-10">
+    <header className="w-full p-6 md:p-8 pl-[27px] md:pl-[35px]">
       <div>
         <button
           onClick={() => scrollTo("about")}
