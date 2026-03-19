@@ -88,7 +88,7 @@ const HeroSection = () => {
       </div>
 
       <nav className="fixed top-6 right-6 md:top-8 md:right-8 z-50 hidden md:flex flex-col items-end gap-4 text-[18px] text-foreground font-medium">
-        {navItems.map((item) => {
+        {navItems.filter(i => !i.secondary).map((item) => {
           const isActive = activeSection === item.id;
           return (
             <button
@@ -106,7 +106,23 @@ const HeroSection = () => {
           );
         })}
         <div className="mt-3 flex flex-col items-end gap-4 text-muted-foreground">
-          <button onClick={() => scrollTo("contact")} className="hover:text-foreground hover:underline underline-offset-8 decoration-2 decoration-[hsl(210,100%,56%)] transition-all">Contact</button>
+          {(() => {
+            const isActive = activeSection === "contact";
+            return (
+              <button
+                onClick={() => scrollTo("contact")}
+                className="hover:text-foreground hover:underline underline-offset-8 decoration-2 decoration-[hsl(210,100%,56%)] transition-all duration-300"
+                style={{
+                  fontWeight: isActive ? 700 : 500,
+                  color: isActive ? "hsl(var(--foreground))" : undefined,
+                  transform: isActive ? "scale(1.12)" : "scale(1)",
+                  transformOrigin: "right center",
+                }}
+              >
+                Contact
+              </button>
+            );
+          })()}
           <a href="https://www.linkedin.com/in/joecastaldo/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground hover:underline underline-offset-8 decoration-2 decoration-[hsl(210,100%,56%)] transition-all">LinkedIn</a>
         </div>
       </nav>
