@@ -1,5 +1,3 @@
-import { ArrowUpRight } from "lucide-react";
-
 const articles = [
   { title: "The Race to Build AI That Can Think", publication: "The Globe and Mail", date: "2024", category: "Technology" },
   { title: "Inside Canada's Productivity Crisis", publication: "The Globe and Mail", date: "2024", category: "Economy" },
@@ -11,34 +9,22 @@ const articles = [
 
 const WritingSection = () => {
   return (
-    <section id="writing" className="py-24 px-6 bg-card">
-      <div className="max-w-3xl mx-auto">
-        <h2 className="text-xs tracking-[0.25em] uppercase font-medium text-primary mb-12">
-          Selected Writing
-        </h2>
-        <div className="divide-y divide-border">
-          {articles.map((article, i) => (
-            <div
-              key={i}
-              className="group py-6 first:pt-0 last:pb-0 flex items-start justify-between gap-4 cursor-pointer"
-            >
-              <div>
-                <h3 className="text-base font-medium text-foreground group-hover:text-primary transition-colors duration-200 mb-1">
-                  {article.title}
-                </h3>
-                <p className="text-sm font-light text-muted-foreground">
-                  {article.publication} · {article.date}
-                </p>
-              </div>
-              <ArrowUpRight
-                size={16}
-                className="text-muted-foreground/40 group-hover:text-primary transition-all duration-200 mt-1 shrink-0 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-              />
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
+    <div id="writing" className="flex flex-col gap-24">
+      <h2 className="text-[12px] text-muted-foreground uppercase tracking-widest">Selected Writing</h2>
+      {articles.map((article, i) => (
+        <article key={i} className="flex flex-col gap-3">
+          <span className="text-[12px] text-muted-foreground/60 uppercase tracking-widest">
+            {article.category} · {article.date}
+          </span>
+          <p className="text-[15px] text-muted-foreground leading-relaxed max-w-[650px]">
+            <span className="font-semibold text-foreground underline decoration-muted-foreground/40 hover:decoration-foreground transition-colors underline-offset-2 cursor-pointer">
+              {article.title}
+            </span>
+            {" "}— {article.publication}
+          </p>
+        </article>
+      ))}
+    </div>
   );
 };
 

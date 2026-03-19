@@ -5,24 +5,18 @@ const events = [
 
 const SpeakingSection = () => {
   return (
-    <section id="speaking" className="py-24 px-6 bg-card">
-      <div className="max-w-3xl mx-auto">
-        <h2 className="text-xs tracking-[0.25em] uppercase font-medium text-primary mb-12">
-          Public Speaking
-        </h2>
-        <div className="divide-y divide-border">
-          {events.map((item, i) => (
-            <div key={i} className="py-5 first:pt-0 last:pb-0 flex items-baseline justify-between gap-4">
-              <div>
-                <h3 className="text-base font-medium text-foreground mb-0.5">{item.event}</h3>
-                <p className="text-sm font-light italic text-muted-foreground">{item.topic}</p>
-              </div>
-              <span className="text-xs font-light text-muted-foreground whitespace-nowrap">{item.year}</span>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
+    <div id="speaking" className="flex flex-col gap-24">
+      <h2 className="text-[12px] text-muted-foreground uppercase tracking-widest">Public Speaking</h2>
+      {events.map((item, i) => (
+        <article key={i} className="flex flex-col gap-3">
+          <span className="text-[12px] text-muted-foreground/60 uppercase tracking-widest">{item.year}</span>
+          <p className="text-[15px] text-muted-foreground leading-relaxed max-w-[650px]">
+            <span className="font-semibold text-foreground">{item.event}</span>
+            {" "}— {item.topic}
+          </p>
+        </article>
+      ))}
+    </div>
   );
 };
 

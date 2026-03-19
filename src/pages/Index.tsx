@@ -1,4 +1,3 @@
-import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import WritingSection from "@/components/WritingSection";
@@ -14,28 +13,29 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <GeocitiesBanner />
-      <Navbar />
-      <ScrollFadeIn>
-        <HeroSection />
-      </ScrollFadeIn>
-      <ScrollFadeIn>
-        <AboutSection />
-      </ScrollFadeIn>
-      <ScrollFadeIn>
-        <WritingSection />
-      </ScrollFadeIn>
-      <ScrollFadeIn>
-        <MediaSection />
-      </ScrollFadeIn>
-      <ScrollFadeIn>
-        <SpeakingSection />
-      </ScrollFadeIn>
-      <ScrollFadeIn>
-        <AwardsSection />
-      </ScrollFadeIn>
-      <ScrollFadeIn>
-        <ContactSection />
-      </ScrollFadeIn>
+      <HeroSection />
+      <main className="w-full max-w-[800px] mx-auto px-6 pt-64 pb-40">
+        <ScrollFadeIn>
+          <AboutSection />
+        </ScrollFadeIn>
+        <div className="flex flex-col gap-40">
+          <ScrollFadeIn>
+            <WritingSection />
+          </ScrollFadeIn>
+          <ScrollFadeIn>
+            <MediaSection />
+          </ScrollFadeIn>
+          <ScrollFadeIn>
+            <SpeakingSection />
+          </ScrollFadeIn>
+          <ScrollFadeIn>
+            <AwardsSection />
+          </ScrollFadeIn>
+          <ScrollFadeIn>
+            <ContactSection />
+          </ScrollFadeIn>
+        </div>
+      </main>
       <Footer />
     </div>
   );
