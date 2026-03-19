@@ -13,7 +13,7 @@
        url('/fonts/Swear_Text-Black_Cilati.woff') format('woff');
   font-weight: 900;
   font-style: italic;
-  font-display: swap;
+  font-display: block;
 }
 
 @tailwind base;
