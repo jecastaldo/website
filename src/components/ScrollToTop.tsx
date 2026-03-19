@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import { ChevronUp } from "lucide-react";
+import { useMobileMenu } from "@/contexts/MobileMenuContext";
 
 const ScrollToTop = () => {
   const [visible, setVisible] = useState(false);
+  const { menuOpen } = useMobileMenu();
 
   useEffect(() => {
     const onScroll = () => setVisible(window.scrollY > 300);
@@ -10,7 +12,7 @@ const ScrollToTop = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  if (!visible) return null;
+  if (!visible || menuOpen) return null;
 
   return (
     <button

@@ -10,38 +10,41 @@ import ScrollFadeIn from "@/components/ScrollFadeIn";
 import GeocitiesBanner from "@/components/GeocitiesBanner";
 import ScrollToTop from "@/components/ScrollToTop";
 import StickyMonogram from "@/components/StickyMonogram";
+import { MobileMenuProvider } from "@/contexts/MobileMenuContext";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
-      <GeocitiesBanner />
-      <HeroSection />
-      <main className="w-full max-w-[800px] pl-8 md:pl-10 pr-6 pt-8 pb-40">
-        <ScrollFadeIn>
-          <AboutSection />
-        </ScrollFadeIn>
-        <div className="flex flex-col gap-40">
+    <MobileMenuProvider>
+      <div className="min-h-screen bg-background">
+        <GeocitiesBanner />
+        <HeroSection />
+        <main className="w-full max-w-[800px] pl-8 md:pl-10 pr-6 pt-8 pb-40">
           <ScrollFadeIn>
-            <WritingSection />
+            <AboutSection />
           </ScrollFadeIn>
-          <ScrollFadeIn>
-            <MediaSection />
-          </ScrollFadeIn>
-          <ScrollFadeIn>
-            <SpeakingSection />
-          </ScrollFadeIn>
-          <ScrollFadeIn>
-            <AwardsSection />
-          </ScrollFadeIn>
-          <ScrollFadeIn>
-            <ContactSection />
-          </ScrollFadeIn>
-        </div>
-      </main>
-      <Footer />
-      <ScrollToTop />
-      <StickyMonogram />
-    </div>
+          <div className="flex flex-col gap-40">
+            <ScrollFadeIn>
+              <WritingSection />
+            </ScrollFadeIn>
+            <ScrollFadeIn>
+              <MediaSection />
+            </ScrollFadeIn>
+            <ScrollFadeIn>
+              <SpeakingSection />
+            </ScrollFadeIn>
+            <ScrollFadeIn>
+              <AwardsSection />
+            </ScrollFadeIn>
+            <ScrollFadeIn>
+              <ContactSection />
+            </ScrollFadeIn>
+          </div>
+        </main>
+        <Footer />
+        <ScrollToTop />
+        <StickyMonogram />
+      </div>
+    </MobileMenuProvider>
   );
 };
 
