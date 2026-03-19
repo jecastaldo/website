@@ -7,7 +7,7 @@ const HeroSection = () => {
       <div className="pointer-events-auto">
         <button
           onClick={() => document.querySelector("#about")?.scrollIntoView({ behavior: "smooth" })}
-          className="font-display text-5xl md:text-[5.5rem] leading-none tracking-tight text-foreground hover:opacity-80 transition-opacity"
+          className="font-display italic text-5xl md:text-[5.5rem] leading-none tracking-tight text-foreground hover:opacity-80 transition-opacity"
         >
           Joe Castaldo
         </button>
