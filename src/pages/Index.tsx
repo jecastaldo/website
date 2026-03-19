@@ -14,7 +14,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <GeocitiesBanner />
       <HeroSection />
-      <main className="w-full max-w-[800px] mx-auto px-6 pt-64 pb-40">
+      <main className="w-full max-w-[800px] mx-auto px-6 pt-32 pb-40">
         <ScrollFadeIn>
           <AboutSection />
         </ScrollFadeIn>
