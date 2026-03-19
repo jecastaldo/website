@@ -1,6 +1,6 @@
 const events = [
-  { event: "Elevate Conference", year: "2025", topic: "Lights, Camera, AI: Hollywood's Next Act" },
-  { event: "MaRS Mornings", year: "2025", topic: "Infrastructure Up: Canada's Sovereign Compute Conundrum" },
+  { event: "Elevate Conference", year: "2025", topic: "Lights, Camera, AI: Hollywood's Next Act", url: "https://elevatefestival.ca/" },
+  { event: "MaRS Mornings", year: "2025", topic: "Infrastructure Up: Canada's Sovereign Compute Conundrum", url: "https://www.marsdd.com" },
 ];
 
 const SpeakingSection = () => {
