@@ -29,7 +29,7 @@
     --secondary-foreground: 0 0% 85%;
 
     --muted: 0 0% 10%;
-    --muted-foreground: 0 0% 55%;
+    --muted-foreground: 0 0% 62%;
 
     --accent: 0 0% 15%;
     --accent-foreground: 0 0% 100%;
@@ -63,7 +63,8 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'Inter', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 17px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
