@@ -1,6 +1,6 @@
 const AboutSection = () => {
   return (
-    <section id="about" className="mb-40 text-[14px] leading-relaxed text-muted-foreground max-w-[500px]">
+    <section id="about" className="mb-40 text-[19px] leading-relaxed text-foreground max-w-[600px]">
       <p className="mb-4">
         Award-winning writer and editor with nearly 20 years of experience crafting long-form, research-driven narratives on business, technology, policy, and innovation. Currently a Business Reporter at{" "}
         <span className="underline decoration-muted-foreground/40 hover:decoration-foreground transition-colors underline-offset-2 text-foreground">The Globe and Mail</span>.
