@@ -51,14 +51,15 @@ const HeroSection = () => {
   };
 
   return (
-    <header className="w-full p-6 md:p-8 pl-[27px] md:pl-[35px]">
+    <header className="w-full p-6 md:p-8 pl-[22px] md:pl-[30px]">
       <div>
         <button
           onClick={() => scrollTo("about")}
           className="font-display italic text-5xl md:text-[5.5rem] leading-none text-foreground hover:opacity-80 transition-opacity font-bold"
           style={{ letterSpacing: '-0.02em' }}
         >
-          Joe Castaldo
+          <span style={{ letterSpacing: '-0.06em' }}>Joe</span>{" "}
+          <span>C<span style={{ letterSpacing: '-0.04em' }}>a</span>staldo</span>
         </button>
       </div>
 
