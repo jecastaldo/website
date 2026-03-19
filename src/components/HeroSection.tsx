@@ -49,7 +49,7 @@ const HeroSection = () => {
     const el = document.querySelector(`#${id}`);
     if (el) {
       const isMobile = window.innerWidth < 768;
-      const y = el.getBoundingClientRect().top + window.scrollY - (isMobile ? 40 : 0);
+      const y = el.getBoundingClientRect().top + window.scrollY - (isMobile ? 120 : 0);
       window.scrollTo({ top: y, behavior: "smooth" });
     }
     setMenuOpen(false);
