@@ -12,7 +12,7 @@ const WritingSection = () => {
     <div id="writing" className="flex flex-col gap-10">
       <h2 className="text-[22px] text-foreground font-semibold tracking-tight">Selected Writing</h2>
       {articles.map((article, i) => (
-        <article key={i} className="flex flex-col gap-3">
+        <article key={i} className="flex flex-col gap-1">
           <span className="text-[12px] text-muted-foreground/60 uppercase tracking-widest">
             {article.category} · {article.date}
           </span>

@@ -14,7 +14,7 @@ const AwardsSection = () => {
     <div id="awards" className="flex flex-col gap-10">
       <h2 className="text-[22px] text-foreground font-semibold tracking-tight">Awards & Recognition</h2>
       {awards.map((award, i) => (
-        <article key={i} className="flex flex-col gap-3">
+        <article key={i} className="flex flex-col gap-1">
           <span className="text-[12px] text-muted-foreground/60 uppercase tracking-widest">{award.year}</span>
           <p className="text-[19px] text-muted-foreground leading-relaxed max-w-[650px]">
             <span className="font-semibold text-foreground">{award.name}</span>
