@@ -32,7 +32,17 @@ const HeroSection = () => {
       observers.push(observer);
     });
 
-    return () => observers.forEach((o) => o.disconnect());
+    const onScroll = () => {
+      if (window.scrollY < 100) {
+        setActiveSection(null);
+      }
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+
+    return () => {
+      observers.forEach((o) => o.disconnect());
+      window.removeEventListener("scroll", onScroll);
+    };
   }, []);
 
   const scrollTo = (id: string) => {
