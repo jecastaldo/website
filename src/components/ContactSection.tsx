@@ -12,7 +12,7 @@ const ContactSection = () => {
         </a>
         {" "}or{" "}
         <a
-          href="https://linkedin.com/in/joecastaldo"
+          href="https://www.linkedin.com/in/joecastaldo/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-foreground underline decoration-muted-foreground/40 hover:decoration-foreground transition-colors underline-offset-2"

@@ -11,7 +11,7 @@ const SpeakingSection = () => {
         <article key={i} className="flex flex-col gap-1">
           <span className="text-[12px] text-muted-foreground/60 uppercase tracking-widest">{item.year}</span>
           <p className="text-[19px] text-muted-foreground leading-relaxed max-w-[650px]">
-            <span className="font-semibold text-foreground">{item.event}</span>
+            <a href={item.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground underline decoration-muted-foreground/40 hover:decoration-foreground transition-colors underline-offset-2">{item.event}</a>
             {" "}— {item.topic}
           </p>
         </article>

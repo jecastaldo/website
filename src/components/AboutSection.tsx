@@ -12,7 +12,7 @@ const AboutSection = () => {
       </p>
       <p>
         Featured in the Netflix documentary{" "}
-        <span className="text-foreground italic">Trust No One: The Hunt for the Crypto King</span>.
+        <a href="https://www.youtube.com/watch?v=vW2BPQ15OSw" target="_blank" rel="noopener noreferrer" className="text-foreground italic underline decoration-muted-foreground/40 hover:decoration-foreground transition-colors underline-offset-2">Trust No One: The Hunt for the Crypto King</a>.
       </p>
     </section>
   );
