@@ -29,7 +29,7 @@ const HeroSection = () => {
 
       <button
         onClick={() => setMenuOpen(!menuOpen)}
-        className="fixed top-6 right-6 z-[60] md:hidden flex flex-col justify-center items-center gap-[6px] w-10 h-10"
+        className="fixed top-6 right-6 z-[60] md:hidden flex flex-col justify-center items-center gap-[6px] w-10 h-10 rounded-full bg-background/50"
         aria-label="Toggle menu"
       >
         <span className={`block w-6 h-[1.5px] bg-foreground transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-[3.75px]" : ""}`} />
