@@ -77,7 +77,7 @@ const MediaSection = () => {
         <article key={i} className="flex flex-col gap-1">
           <span className="text-[12px] text-muted-foreground/60 uppercase tracking-widest flex items-center gap-1.5">
             <Mic size={12} />
-            {item.date}
+            The Decibel Podcast · {item.date}
           </span>
           <p className="text-[19px] text-muted-foreground leading-relaxed max-w-[650px]">
             <a
@@ -89,7 +89,6 @@ const MediaSection = () => {
               {item.title}
             </a>
             {" "}— {item.description}
-            <span className="text-muted-foreground/40"> · {item.show}</span>
           </p>
         </article>
       ))}
