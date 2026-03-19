@@ -14,7 +14,7 @@ const HeroSection = () => {
       </div>
 
       {/* Nav links */}
-      <nav className="pointer-events-auto flex flex-col items-end gap-1 text-[13px] text-muted-foreground">
+      <nav className="flex flex-col items-end gap-1 text-[13px] text-muted-foreground">
         <div className="flex gap-4 mb-3 text-foreground">
           <button
             onClick={() => document.querySelector("#writing")?.scrollIntoView({ behavior: "smooth" })}
