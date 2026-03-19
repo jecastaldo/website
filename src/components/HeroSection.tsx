@@ -59,7 +59,7 @@ const HeroSection = () => {
           style={{ letterSpacing: '-0.02em' }}
         >
           <span style={{ letterSpacing: '-0.06em' }}>Joe</span>{" "}
-          <span>C<span style={{ marginLeft: '-0.04em' }}>a</span>staldo</span>
+          <span>C<span style={{ marginLeft: '-0.04em' }}>as</span>t<span style={{ marginLeft: '-0.03em' }}>a</span>ldo</span>
         </button>
       </div>
 
