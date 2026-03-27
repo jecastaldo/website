@@ -7,7 +7,7 @@ import AwardsSection from "@/components/AwardsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import ScrollFadeIn from "@/components/ScrollFadeIn";
-import GeocitiesBanner from "@/components/GeocitiesBanner";
+
 import ScrollToTop from "@/components/ScrollToTop";
 import StickyMonogram from "@/components/StickyMonogram";
 import { MobileMenuProvider } from "@/contexts/MobileMenuContext";
@@ -16,7 +16,6 @@ const Index = () => {
   return (
     <MobileMenuProvider>
       <div className="min-h-screen bg-background">
-        <GeocitiesBanner />
         <HeroSection />
         <main className="w-full max-w-[800px] pl-8 md:pl-10 pr-6 pt-8 pb-40">
           <ScrollFadeIn>

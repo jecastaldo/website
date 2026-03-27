@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 
 const bioA = `Joe Castaldo is a journalist who has spent nearly two decades chasing stories that sit at the intersection of business, technology, and human ambition. He's the kind of writer who will spend months on a single piece — calling sources at odd hours, reading SEC filings for fun, and occasionally getting lost down rabbit holes that lead to genuinely surprising places. His work has been recognized with National Newspaper Awards and National Magazine Awards, and he appeared in the Netflix documentary Trust No One, which was surreal and slightly terrifying. He currently reports on business for The Globe and Mail, where he tries to make complex subjects feel urgent and alive.`;
@@ -71,12 +70,12 @@ const TuringTest = () => {
           <div className="text-center space-y-4">
             <p className="text-sm font-medium text-muted-foreground mb-4">Which one did Joe write?</p>
             <div className="flex justify-center gap-4">
-              <Button onClick={() => handleGuess("A")} variant="outline" size="lg" className="rounded-xl px-10 font-medium">
+              <button onClick={() => handleGuess("A")} className="rounded-xl px-10 py-3 font-medium border border-border text-foreground hover:bg-foreground/10 transition-colors">
                 Bio A
-              </Button>
-              <Button onClick={() => handleGuess("B")} variant="outline" size="lg" className="rounded-xl px-10 font-medium">
+              </button>
+              <button onClick={() => handleGuess("B")} className="rounded-xl px-10 py-3 font-medium border border-border text-foreground hover:bg-foreground/10 transition-colors">
                 Bio B
-              </Button>
+              </button>
             </div>
           </div>
         ) : (
@@ -90,13 +89,12 @@ const TuringTest = () => {
                 ? "You've got a sharp eye for human voice."
                 : "Don't worry — it's getting harder to tell every day."}
             </p>
-            <Button
+            <button
               onClick={() => { setRevealed(false); setGuess(null); }}
-              variant="ghost"
-              className="mt-6 font-medium"
+              className="mt-6 font-medium text-foreground hover:bg-foreground/10 px-4 py-2 rounded-lg transition-colors"
             >
               Try again
-            </Button>
+            </button>
           </div>
         )}
       </div>

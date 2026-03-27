@@ -8,7 +8,7 @@ const ContactSection = () => {
           href="mailto:joe.castaldo@gmail.com"
           className="text-foreground underline decoration-muted-foreground/40 hover:decoration-foreground transition-colors underline-offset-2"
         >
-          Email
+          email
         </a>
         {" "}or{" "}
         <a

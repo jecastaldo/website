@@ -4,7 +4,7 @@ import { useMobileMenu } from "@/contexts/MobileMenuContext";
 const navItems = [
   { label: "Writing", id: "writing" },
   { label: "Media", id: "media" },
-  { label: "Speaking", id: "speaking" },
+  { label: <>Public<br />Speaking</>, id: "speaking" },
   { label: "Awards", id: "awards" },
   { label: "Contact", id: "contact", secondary: true },
 ];
@@ -64,7 +64,7 @@ const HeroSection = () => {
           style={{ letterSpacing: '-0.02em' }}
         >
           <span style={{ letterSpacing: '-0.06em' }}>Joe</span>{" "}
-          <span>C<span style={{ marginLeft: '-0.04em' }}>as</span>t<span style={{ marginLeft: '-0.03em' }}>a</span>ldo</span>
+          <span>C<span style={{ marginLeft: '-0.04em', letterSpacing: '-0.09em' }}>as</span><span style={{ marginLeft: '0.06em' }}>t</span><span style={{ marginLeft: '-0.03em' }}>a</span>ldo</span>
         </button>
       </div>
 
@@ -82,8 +82,8 @@ const HeroSection = () => {
           menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
       >
-        {navItems.map((item) => (
-          <button key={item.label} onClick={() => scrollTo(item.id)} className="text-foreground hover:underline underline-offset-8 decoration-2 decoration-[hsl(210,100%,56%)] transition-all">
+        {navItems.filter(i => !i.secondary).map((item) => (
+          <button key={item.label} onClick={() => scrollTo(item.id)} className="text-foreground text-right hover:underline underline-offset-8 decoration-2 decoration-[hsl(210,100%,56%)] transition-all">
             {item.label}
           </button>
         ))}
@@ -100,7 +100,7 @@ const HeroSection = () => {
             <button
               key={item.label}
               onClick={() => scrollTo(item.id)}
-              className="hover:underline underline-offset-8 decoration-2 decoration-[hsl(210,100%,56%)] transition-all duration-300 origin-right"
+              className="text-right hover:underline underline-offset-8 decoration-2 decoration-[hsl(210,100%,56%)] transition-all duration-300 origin-right"
               style={{
                 fontWeight: isActive ? 700 : 500,
                 transform: isActive ? "scale(1.12)" : "scale(1)",
