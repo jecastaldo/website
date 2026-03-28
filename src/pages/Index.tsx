@@ -35,7 +35,19 @@ const Index = () => {
               <AwardsSection />
             </ScrollFadeIn>
             <ScrollFadeIn>
-              <ContactSection />
+              <div className="flex flex-col gap-16">
+                <figure className="flex flex-col gap-2 max-w-[650px]">
+                  <img src="/ai-avatar-zoom.jpg" alt="Joe Castaldo chatting with an AI avatar of himself on a Zoom call" className="w-full rounded" />
+                  <figcaption className="text-[13px] text-muted-foreground/50 leading-relaxed">
+                    Chatting with an{" "}
+                    <a href="https://www.theglobeandmail.com/business/article-digital-clone-ai-avatar-meeting-efficiency/" target="_blank" rel="noopener noreferrer" className="underline decoration-muted-foreground/30 hover:decoration-muted-foreground transition-colors underline-offset-2">
+                      interactive AI avatar
+                    </a>{" "}
+                    of myself on a Zoom call back in 2024.<br />Image courtesy of Patrick Dell/The Globe and Mail.
+                  </figcaption>
+                </figure>
+                <ContactSection />
+              </div>
             </ScrollFadeIn>
           </div>
         </main>

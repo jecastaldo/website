@@ -5,7 +5,7 @@ const navLinks = [
   { label: "About", href: "#about" },
   { label: "Writing", href: "#writing" },
   { label: "Media", href: "#media" },
-  { label: <>Public<br />Speaking</>, href: "#speaking" },
+  { label: <span className="leading-tight">Public<br />Speaking</span>, href: "#speaking" },
   { label: "Awards", href: "#awards" },
   { label: "Contact", href: "#contact" },
 ];

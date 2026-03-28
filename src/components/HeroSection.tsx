@@ -4,7 +4,7 @@ import { useMobileMenu } from "@/contexts/MobileMenuContext";
 const navItems = [
   { label: "Writing", id: "writing" },
   { label: "Media", id: "media" },
-  { label: <>Public<br />Speaking</>, id: "speaking" },
+  { label: <span className="leading-tight">Public<br />Speaking</span>, id: "speaking" },
   { label: "Awards", id: "awards" },
   { label: "Contact", id: "contact", secondary: true },
 ];
