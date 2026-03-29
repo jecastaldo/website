@@ -1,13 +1,5 @@
 import { Film, Mic } from "lucide-react";
 
-const appearances = [
-  {
-    title: "Trust No One: The Hunt for the Crypto King",
-    type: "Netflix Documentary",
-    description: "Featured journalist in the Netflix documentary investigating the mysterious death of QuadrigaCX founder Gerald Cotten and the disappearance of $250 million in cryptocurrency.",
-  },
-];
-
 const podcasts = [
   {
     title: "Is AI making us dumb?",
@@ -51,6 +43,14 @@ const podcasts = [
     description: "Why Canada's AI computing power gap matters and what can be done to prevent a brain drain of AI talent.",
     url: "https://podcasts.apple.com/ca/podcast/canadas-uncertain-ai-future/id1565410296?i=1000651285834",
   },
+  {
+    title: "Trust No One: The Hunt for the Crypto King",
+    show: "Netflix Documentary",
+    date: "2022",
+    description: "Featured journalist in the Netflix documentary investigating the mysterious death of QuadrigaCX founder Gerald Cotten and the disappearance of $250 million in cryptocurrency.",
+    url: "https://youtu.be/vW2BPQ15OSw?si=CLcGBhT7L-uxtIwv",
+    icon: "film" as const,
+  },
 ];
 
 const MediaSection = () => {
@@ -58,26 +58,11 @@ const MediaSection = () => {
     <div id="media" className="flex flex-col gap-10">
       <h2 className="text-[22px] text-foreground font-semibold tracking-tight">Podcasts & Media</h2>
 
-      {/* Featured documentary */}
-      {appearances.map((item, i) => (
-        <article key={i} className="flex flex-col gap-1">
-          <span className="text-[12px] text-muted-foreground/60 uppercase tracking-widest flex items-center gap-1.5">
-            <Film size={12} />
-            {item.type}
-          </span>
-          <p className="text-[19px] text-muted-foreground leading-relaxed max-w-[650px]">
-            <a href="https://youtu.be/vW2BPQ15OSw?si=CLcGBhT7L-uxtIwv" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground underline decoration-muted-foreground/40 hover:decoration-foreground transition-colors underline-offset-2">{item.title}</a>
-            {" "}— {item.description}
-          </p>
-        </article>
-      ))}
-
-      {/* Podcast episodes */}
       {podcasts.map((item, i) => (
         <article key={i} className="flex flex-col gap-1">
           <span className="text-[12px] text-muted-foreground/60 uppercase tracking-widest flex items-center gap-1.5">
-            <Mic size={12} />
-            The Decibel Podcast · {item.date}
+            {"icon" in item && item.icon === "film" ? <Film size={12} /> : <Mic size={12} />}
+            {item.show} · {item.date}
           </span>
           <p className="text-[19px] text-muted-foreground leading-relaxed max-w-[650px]">
             <a
