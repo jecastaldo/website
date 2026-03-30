@@ -63,8 +63,8 @@ const HeroSection = () => {
           className="font-display italic text-5xl md:text-[5.5rem] leading-none text-foreground hover:opacity-80 transition-opacity font-bold"
           style={{ letterSpacing: '-0.02em' }}
         >
-          <span style={{ letterSpacing: '-0.06em' }}>Joe</span>{" "}
-          <span>C<span style={{ marginLeft: '-0.04em', letterSpacing: '-0.09em' }}>as</span><span style={{ marginLeft: '0.06em' }}>t</span><span style={{ marginLeft: '-0.03em' }}>a</span>ldo</span>
+          <span><span style={{ letterSpacing: '-0.08em' }}>J</span><span style={{ letterSpacing: '-0.06em' }}>oe</span></span>{" "}
+          <span>C<span style={{ marginLeft: '-0.04em', letterSpacing: '-0.09em' }}>as</span><span style={{ marginLeft: '0.06em' }}>t</span><span style={{ marginLeft: '-0.03em' }}>a</span>ld<span style={{ marginLeft: '-0.03em' }}>o</span></span>
         </button>
       </div>
 
