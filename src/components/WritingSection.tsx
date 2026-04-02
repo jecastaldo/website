@@ -8,6 +8,7 @@ const articles = [
   { title: "What You Need to Know About the AI Bubble – and How It Will Pop", publication: "The Globe and Mail", date: "2025", category: "AI", url: "https://www.theglobeandmail.com/business/article-what-you-need-to-know-ai-artificial-intelligence-bubble-will-pop/" },
   { title: "Canadian CEOs Are Embracing Generative AI. The Impact on Their Employees Is Less Certain", publication: "The Globe and Mail", date: "2025", category: "Business", url: "https://www.theglobeandmail.com/business/article-canadian-ceos-embracing-generative-ai-speed-efficiency-impact/" },
   { title: "I Created an AI Avatar of Myself to Go to Zoom Meetings", publication: "The Globe and Mail", date: "2024", category: "AI", url: "https://www.theglobeandmail.com/business/article-digital-clone-ai-avatar-meeting-efficiency/" },
+  { title: "Meet the Gig Workers Making AI Machines More Accurate, Capable and Powerful", publication: "The Globe and Mail", date: "2023", category: "AI", url: "https://www.theglobeandmail.com/business/article-ai-data-gig-workers/" },
 ];
 
 const WritingSection = () => {
