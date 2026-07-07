@@ -1,5 +1,6 @@
 const articles = [
   { title: "Inside the Fastest-Growing Canadian AI Startup You've Never Heard Of", publication: "The Globe and Mail", date: "2026", category: "AI", url: "https://www.theglobeandmail.com/business/article-turbopuffer-fastest-growing-canadian-ai-startup-never-heard-of/" },
+  { title: "How a Toronto AI Startup Hopes to Make the Keyboard Obsolete", publication: "The Globe and Mail", date: "2026", category: "Technology", url: "https://www.theglobeandmail.com/business/article-toronto-ai-startup-superwhisper-dictation-app/" },
   { title: "AI superusers are pulling ahead and widening the productivity gap", publication: "The Globe and Mail", date: "2026", category: "AI", url: "https://www.theglobeandmail.com/business/article-for-these-busy-parents-and-professionals-ai-agents-are-the-personal/" },
   { title: "What Do AI Firms Do When Users Tell Chatbots Their Dark, Violent Thoughts?", publication: "The Globe and Mail", date: "2026", category: "AI", url: "https://www.theglobeandmail.com/canada/article-tumbler-ridge-ai-chatbots-regulation/" },
   { title: "College Basketball's New Assistant Coach: AI", publication: "The Globe and Mail", date: "2026", category: "AI", url: "https://www.theglobeandmail.com/business/article-college-basketballs-new-assistant-coach-ai/" },
@@ -9,6 +10,7 @@ const articles = [
   { title: "What You Need to Know About the AI Bubble – and How It Will Pop", publication: "The Globe and Mail", date: "2025", category: "AI", url: "https://www.theglobeandmail.com/business/article-what-you-need-to-know-ai-artificial-intelligence-bubble-will-pop/" },
   { title: "Canadian CEOs Are Embracing Generative AI. The Impact on Their Employees Is Less Certain", publication: "The Globe and Mail", date: "2025", category: "Business", url: "https://www.theglobeandmail.com/business/article-canadian-ceos-embracing-generative-ai-speed-efficiency-impact/" },
   { title: "I Created an AI Avatar of Myself to Go to Zoom Meetings", publication: "The Globe and Mail", date: "2024", category: "AI", url: "https://www.theglobeandmail.com/business/article-digital-clone-ai-avatar-meeting-efficiency/" },
+  { title: "In EncroChat Scandal, France Accuses a Little-Known Canadian Tech Nerd of Building a Digital Den for Drug Dealers", publication: "The Globe and Mail", date: "2024", category: "Technology", url: "https://www.theglobeandmail.com/business/article-in-encrochat-scandal-france-accuses-a-little-known-canadian-tech-nerd/" },
   { title: "Meet the Gig Workers Making AI Machines More Accurate, Capable and Powerful", publication: "The Globe and Mail", date: "2023", category: "AI", url: "https://www.theglobeandmail.com/business/article-ai-data-gig-workers/" },
 ];
 
