@@ -1,5 +1,5 @@
 const articles = [
-  { title: "Startups Are Hiring Low-Paid Gig Workers to Train Robots on Manual Labour", publication: "The Globe and Mail", date: "2026", category: "AI", url: "https://www.theglobeandmail.com/business/article-startups-are-hiring-low-paid-gig-workers-to-train-robots-on-manual/" },
+  { title: "Startups Are Hiring Low-Paid Gig Workers to Train Robots", publication: "The Globe and Mail", date: "2026", category: "AI", url: "https://www.theglobeandmail.com/business/article-startups-are-hiring-low-paid-gig-workers-to-train-robots-on-manual/" },
   { title: "Inside the Fastest-Growing Canadian AI Startup You've Never Heard Of", publication: "The Globe and Mail", date: "2026", category: "AI", url: "https://www.theglobeandmail.com/business/article-turbopuffer-fastest-growing-canadian-ai-startup-never-heard-of/" },
   { title: "How a Toronto AI Startup Hopes to Make the Keyboard Obsolete", publication: "The Globe and Mail", date: "2026", category: "Technology", url: "https://www.theglobeandmail.com/business/article-toronto-ai-startup-superwhisper-dictation-app/" },
   { title: "AI superusers are pulling ahead and widening the productivity gap", publication: "The Globe and Mail", date: "2026", category: "AI", url: "https://www.theglobeandmail.com/business/article-for-these-busy-parents-and-professionals-ai-agents-are-the-personal/" },
